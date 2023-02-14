@@ -125,15 +125,6 @@ function cities(){
     }
 
     document.querySelector("#myDiv").appendChild(table);
-
-    //change the text color
-document.querySelector('#myDiv').style.color = 'red';
-//change the text size and alignment
-document.querySelector('#myDiv').style.fontSize = '2em';
-document.querySelector('#myDiv').style.textAlign = 'left';
-//get the text color and add it as text to the div
-var thecolor = document.querySelector('#myDiv').style.color;
-document.querySelector('#myDiv').insertAdjacentHTML('beforeend',thecolor);
 }
 
 document.addEventListener('DOMContentLoaded',initialize)
