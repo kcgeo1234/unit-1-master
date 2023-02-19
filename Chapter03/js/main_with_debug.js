@@ -142,11 +142,6 @@ function addEvents(){
 	table.addEventListener("click", clickme);
 };
 
-// create debugCallback function to perform data conversion (convert response into string)
-function debugCallback(response){
-	return response.json()
-}
-
 // create debugAjax function
 function debugAjax(){
 	// declare myData
@@ -157,7 +152,8 @@ function debugAjax(){
 	// print it in the console and the browser (window or page)
 	fetch("data/MegaCities.geojson")
 		.then(function(response){
-			return debugCallback(response);
+			//perform data conversion (convert response into string)
+			return response.json();
 		})
 		.then(function(data){
 
